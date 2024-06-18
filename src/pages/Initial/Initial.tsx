@@ -5,7 +5,7 @@ const stylesheet = {
   link: 'h-10 bg-blue-600 items-center justify-center p-4 flex rounded-md w-44',
   linkText: 'text-white font-semibold',
   title: 'text-2xl font-semibold',
-  linksContent: 'w-[70vh] justify-between',
+  linksContent: 'w-[70vh] justify-between self-center',
 };
 
 const InitialBody = () => {
@@ -16,7 +16,7 @@ const InitialBody = () => {
         <Text>Escolha uma opção para continuar:</Text>
       </VStack>
       <Flex className={stylesheet.linksContent}>
-        <Link href='/final-costumer-emissor' className={stylesheet.link}>
+        <Link href='/free-value-emissor' className={stylesheet.link}>
           <Text className={stylesheet.linkText}>Valor livre</Text>
         </Link>
         <Link href='/daily-emissor' className={stylesheet.link}>

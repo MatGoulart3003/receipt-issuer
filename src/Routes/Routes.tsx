@@ -5,7 +5,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import { DailyEmissor, FinalCostumerEmissor, Initial } from '../pages';
+import { DailyEmissor, FreeValueEmissor, Initial } from '../pages';
 import { Layout } from '../components';
 
 export interface IRoute {
@@ -23,8 +23,8 @@ const routes: Array<IRoute> = [
     path: '/initial',
   },
   {
-    element: <FinalCostumerEmissor />,
-    path: '/final-costumer-emissor',
+    element: <FreeValueEmissor />,
+    path: '/free-value-emissor',
   },
   {
     element: <DailyEmissor />,
